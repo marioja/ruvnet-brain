@@ -1,0 +1,298 @@
+{
+  "model": "concepts",
+  "dimensions": 0,
+  "metric": "cosine",
+  "name": "concepts",
+  "generated": "2026-06-28T08:03:08.564Z",
+  "repo": "ruvnet-concepts",
+  "note": "L2 synthesis + per-repo primers; embedded into concepts.big.rvf via forge-big.",
+  "entries": {
+    "0": {
+      "path": "agentdb/L2/agentdb-s-core-concepts#0",
+      "kind": "doc",
+      "title": "What are AgentDB's core concepts — the .rvf cognitive container, Reflexion episodic memory, causal graph, skill library, ReasoningBank, and the self-learning bandit?",
+      "chunk": 0,
+      "preview": "# What are AgentDB's core concepts — the .rvf cognitive container, Reflexion episodic memory, causal graph, skill library, ReasoningBank, and the self-learning bandit?\n\n<!-- L2 synthesis · ACCEPTED · "
+    },
+    "1": {
+      "path": "agentdb/L2/agentdb-s-core-concepts#1",
+      "kind": "doc",
+      "title": "What are AgentDB's core concepts — the .rvf cognitive container, Reflexion episodic memory, causal graph, skill library, ReasoningBank, and the self-learning bandit?",
+      "chunk": 1,
+      "preview": "### 5. ReasoningBank\nThe ReasoningBank is a component of AgentDB that integrates with the cognitive container to enhance reasoning capabilities. It allows for the storage and retrieval of interaction "
+    },
+    "2": {
+      "path": "agentdb/L2/agentdb-s-documentation-organized",
+      "kind": "doc",
+      "title": "Where is AgentDB's documentation organized — guides, implementation reports, and ADRs?",
+      "chunk": 0,
+      "preview": "# Where is AgentDB's documentation organized — guides, implementation reports, and ADRs?\n\n<!-- L2 synthesis · ACCEPTED · 2 verified source refs: docs/implementation/RUVECTOR_BACKEND_IMPLEMENTATION.md,"
+    },
+    "3": {
+      "path": "agentdb/L2/agentdb",
+      "kind": "doc",
+      "title": "What is AgentDB and who is it for?",
+      "chunk": 0,
+      "preview": "# What is AgentDB and who is it for?\n\n<!-- L2 synthesis · ACCEPTED · 5 verified source refs: plugins/agentdb-core/skills/agentdb-status/SKILL.md, plugins/agentdb-core/commands/agentdb.md, plugins/agen"
+    },
+    "4": {
+      "path": "ruview/L2/entities-semantic-states-ruview",
+      "kind": "doc",
+      "title": "What entities and semantic states does RuView publish per node to Home Assistant?",
+      "chunk": 0,
+      "preview": "# What entities and semantic states does RuView publish per node to Home Assistant?\n\n<!-- L2 synthesis · ACCEPTED · 4 verified source refs: docs/adr/ADR-122-bfld-ruview-ha-matter-exposure.md, tools/ru"
+    },
+    "5": {
+      "path": "ruflo/L2/guidance-mechanism",
+      "kind": "doc",
+      "title": "How does the guidance system produce a recommendation (guidance_recommend) — what is the mechanism?",
+      "chunk": 0,
+      "preview": "# How does the guidance system produce a recommendation (guidance_recommend) — what is the mechanism?\n\n<!-- L2 synthesis · ACCEPTED · 4 verified source refs: v3/@claude-flow/hooks/src/reasoningbank/gu"
+    },
+    "6": {
+      "path": "ruflo/L2/memory-end-to-end#0",
+      "kind": "doc",
+      "title": "How do I initialize and use ruflo's memory in a project end-to-end?",
+      "chunk": 0,
+      "preview": "# How do I initialize and use ruflo's memory in a project end-to-end?\n\n<!-- L2 synthesis · ACCEPTED · 5 verified source refs: ruflo/src/ruvocal/mcp-bridge/index.js, ruflo/src/mcp-bridge/index.js, v3/@"
+    },
+    "7": {
+      "path": "ruflo/L2/memory-end-to-end#1",
+      "kind": "doc",
+      "title": "How do I initialize and use ruflo's memory in a project end-to-end?",
+      "chunk": 1,
+      "preview": "```javascript\nconst storeCommand: Command = {\n  name: 'store',\n  description: 'Store data in memory',\n  options: [\n    {\n      name: 'key',\n      short: 'k',\n      description: 'Storage key/namespace'"
+    },
+    "8": {
+      "path": "rulake/L2/rulake-s-three-freshness#0",
+      "kind": "doc",
+      "title": "What are ruLake's three freshness modes (Fresh / Eventual / Frozen) and how do they differ?",
+      "chunk": 0,
+      "preview": "# What are ruLake's three freshness modes (Fresh / Eventual / Frozen) and how do they differ?\n\n<!-- L2 synthesis · ACCEPTED · 2 verified source refs: plugins/rulake-kernels/commands/rulake-kernel-stat"
+    },
+    "9": {
+      "path": "rulake/L2/rulake-s-three-freshness#1",
+      "kind": "doc",
+      "title": "What are ruLake's three freshness modes (Fresh / Eventual / Frozen) and how do they differ?",
+      "chunk": 1,
+      "preview": "For further details on the implementation and behavior of these modes, refer to the following paths:\n- `/rulake-kernel-status` for kernel capabilities and dispatch preferences (`plugins/rulake-kernels"
+    },
+    "10": {
+      "path": "ruview/L2/run-ruview-publish-sensing#0",
+      "kind": "doc",
+      "title": "How do I run RuView and publish its sensing to Home Assistant end-to-end?",
+      "chunk": 0,
+      "preview": "# How do I run RuView and publish its sensing to Home Assistant end-to-end?\n\n<!-- L2 synthesis · ACCEPTED · 2 verified source refs: docs/benchmarks/homecore-vs-home-assistant.md, plugins/ruview/comman"
+    },
+    "11": {
+      "path": "ruview/L2/run-ruview-publish-sensing#1",
+      "kind": "doc",
+      "title": "How do I run RuView and publish its sensing to Home Assistant end-to-end?",
+      "chunk": 1,
+      "preview": "By following these steps, you will successfully run RuView, publish its sensing data to Home Assistant, and ensure the integrity of the data being reported. For further details, refer to the specific "
+    },
+    "12": {
+      "path": "ruvector/L2/ruvector-s-adrs-hnsw",
+      "kind": "doc",
+      "title": "Where are RuVector's ADRs and HNSW documentation kept in the repo?",
+      "chunk": 0,
+      "preview": "# Where are RuVector's ADRs and HNSW documentation kept in the repo?\n\n<!-- L2 synthesis · ACCEPTED · 4 verified source refs: crates/ruvector-bench/docs/BENCHMARKS.md, docs/project-phases/phase2_hnsw_i"
+    },
+    "13": {
+      "path": "ruview/L2/ruview-integrate-with-smart",
+      "kind": "doc",
+      "title": "How does RuView integrate with smart-home ecosystems (Home Assistant MQTT, Matter, Apple Home)?",
+      "chunk": 0,
+      "preview": "# How does RuView integrate with smart-home ecosystems (Home Assistant MQTT, Matter, Apple Home)?\n\n<!-- L2 synthesis · ACCEPTED · 3 verified source refs: docs/benchmarks/homecore-vs-home-assistant.md,"
+    },
+    "14": {
+      "path": "ruview/L2/ruview-s-core-concepts",
+      "kind": "doc",
+      "title": "What are RuView's core concepts — CSI (Channel State Information), ESP32 sensors, WiFi-DensePose pose estimation, and RVF cognitive containers?",
+      "chunk": 0,
+      "preview": "# What are RuView's core concepts — CSI (Channel State Information), ESP32 sensors, WiFi-DensePose pose estimation, and RVF cognitive containers?\n\n<!-- L2 synthesis · ACCEPTED · 4 verified source refs"
+    },
+    "15": {
+      "path": "ruflo/PRIMER/ruflo-primer#0",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 0,
+      "preview": "# ruflo — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What Ruflo Is "
+    },
+    "16": {
+      "path": "ruflo/PRIMER/ruflo-primer#1",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 1,
+      "preview": "5. **Appliance Packaging**  \n   EXISTS: Self-contained binary generation (.rvf files) bundling kernels/models/AgentDB via the RVFA builder in `v3/@claude-flow/cli/src/appliance/rvfa-builder.ts`.\n\n6. *"
+    },
+    "17": {
+      "path": "ruflo/PRIMER/ruflo-primer#2",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 2,
+      "preview": "## 6. URL Parameter Management\nThe system provides atomic URL manipulation utilities (`ruflo/src/ruvocal/src/lib/utils/getHref.ts`):\n```typescript\nexport function getHref(\n  url: URL | string,\n  modif"
+    },
+    "18": {
+      "path": "ruflo/PRIMER/ruflo-primer#3",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 3,
+      "preview": "# Where the documentation lives\n\nRuflo's documentation is architecturally organized across several formal systems with clear ownership and maintenance paths:\n\n## 1. Architecture Decision Records (ADRs"
+    },
+    "19": {
+      "path": "ruflo/PRIMER/ruflo-primer#4",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 4,
+      "preview": "### Settings Management\nUser settings are managed through:\n- Default settings defined in DEFAULT_SETTINGS (referenced in `ruflo/src/ruvocal/src/routes/login/callback/updateUser.ts`)\n- Settings API end"
+    },
+    "20": {
+      "path": "ruvector/PRIMER/ruvector-primer#0",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 0,
+      "preview": "# ruvector — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What It Is "
+    },
+    "21": {
+      "path": "ruvector/PRIMER/ruvector-primer#1",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 1,
+      "preview": "5. **Sparse Inference Embeddings**  \n   Implementation: `crates/ruvector-sparse-inference/src/integration/ruvector.rs`  \n   - Generates embeddings via PowerInfer-style sparse FFNs  \n   - Configurable "
+    },
+    "22": {
+      "path": "ruvector/PRIMER/ruvector-primer#2",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 2,
+      "preview": "## Nervous System Integration\nThe **biologically inspired memory system** (`crates/ruvector-nervous-system/src/integration/ruvector.rs`) combines:\n- Hopfield networks for associative memory (`hopfield"
+    },
+    "23": {
+      "path": "ruvector/PRIMER/ruvector-primer#3",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 3,
+      "preview": "**Application Gallery EXISTS** (`docs/adr/ADR-113-rvf-app-gallery-ruvix-applications.md`):\n- Templated RVF container management\n- Template search/load/configure capabilities\n- Custom template CRUD ope"
+    },
+    "24": {
+      "path": "ruvector/PRIMER/ruvector-primer#4",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 4,
+      "preview": "### For PostgreSQL integration  \nEXISTS: The complete PostgreSQL extension installer (`npm/packages/postgres-cli/src/commands/install.ts`):  \n```bash\n# Install CLI globally\nnpm install -g @ruvector/cl"
+    },
+    "25": {
+      "path": "agentdb/PRIMER/agentdb-primer#0",
+      "kind": "doc",
+      "title": "agentdb — Primer",
+      "chunk": 0,
+      "preview": "# agentdb — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What AgentDB"
+    },
+    "26": {
+      "path": "agentdb/PRIMER/agentdb-primer#1",
+      "kind": "doc",
+      "title": "agentdb — Primer",
+      "chunk": 1,
+      "preview": "### 4. Production MCP protocol server  \nEXISTS in `src/mcp/agentdb-mcp-server.ts`:  \n- Exposes vector operations via Model Context Protocol  \n- Integrates with Claude Desktop using stdio transport  \n-"
+    },
+    "27": {
+      "path": "agentdb/PRIMER/agentdb-primer#2",
+      "kind": "doc",
+      "title": "agentdb — Primer",
+      "chunk": 2,
+      "preview": "## 5. Production-Grade Features (`benchmarks/runner.ts` / `src/mcp/agentdb-mcp-server.ts`)\nThe system includes enterprise-ready capabilities:\n- Multi-threaded ACID-compliant operations (`simulation/re"
+    },
+    "28": {
+      "path": "agentdb/PRIMER/agentdb-primer#3",
+      "kind": "doc",
+      "title": "agentdb — Primer",
+      "chunk": 3,
+      "preview": "#### Summary\nAgentDB is a mature system with a robust set of shipped features, particularly in hyperbolic geometry, attention mechanisms, and advanced browser capabilities. Proposed features, such as "
+    },
+    "29": {
+      "path": "agentdb/PRIMER/agentdb-primer#4",
+      "kind": "doc",
+      "title": "agentdb — Primer",
+      "chunk": 4,
+      "preview": "Batch insert for efficiency (141x faster than sequential per `tests/docker/test-clean-install.mjs`):\n\n```javascript\nawait db.executeTool('agentdb_insert_batch', {\n  items: [\n    {text: \"JWT auth guide"
+    },
+    "30": {
+      "path": "rulake/PRIMER/rulake-primer#0",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 0,
+      "preview": "# rulake — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What it is & "
+    },
+    "31": {
+      "path": "rulake/PRIMER/rulake-primer#1",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 1,
+      "preview": "3. **List available tools with capability-based filtering**  \n   The `tools/list` endpoint lists tools filtered by the server's effective capabilities. This is implemented in `crates/mcp-server/src/se"
+    },
+    "32": {
+      "path": "rulake/PRIMER/rulake-primer#2",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 2,
+      "preview": "## 1. RaBitQ Vector Search (`crates/core/src/lake.rs`)\nThe primary search mechanism uses RaBitQ (Random Binary Quantization) for approximate nearest neighbor search with L2² scoring. Key capabilities:"
+    },
+    "33": {
+      "path": "rulake/PRIMER/rulake-primer#3",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 3,
+      "preview": "2. **Accelerator Plane**  \n   The accelerator plane is implemented, supporting multiple kernels (CPU, GPU, etc.) with deterministic and non-deterministic paths (`docs/adrs/ADR-157-optional-accelerator"
+    },
+    "34": {
+      "path": "rulake/PRIMER/rulake-primer#4",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 4,
+      "preview": "In summary, ruLake's core features are fully shipped and operational, with a clear roadmap for future enhancements. The shipped features are well-documented, tested, and integrated into the ecosystem,"
+    },
+    "35": {
+      "path": "rulake/PRIMER/rulake-primer#5",
+      "kind": "doc",
+      "title": "rulake — Primer",
+      "chunk": 5,
+      "preview": "#### Basic Workflow\n1. **CLI Usage**:\n   - Run vector searches: `/rulake-query [collection] [query_vector]`\n   - Discover available backends: `/rulake-discover`\n   - Verify bundles: Use the `verifyBun"
+    },
+    "36": {
+      "path": "ruview/PRIMER/ruview-primer#0",
+      "kind": "doc",
+      "title": "ruview — Primer",
+      "chunk": 0,
+      "preview": "# ruview — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What it is & "
+    },
+    "37": {
+      "path": "ruview/PRIMER/ruview-primer#1",
+      "kind": "doc",
+      "title": "ruview — Primer",
+      "chunk": 1,
+      "preview": "4. **Edge Module Registry**  \n   EXISTS - Lists available Cognitum cogs (`tools/ruview-mcp/src/tools/registry-list.ts`)  \n   Implements `ruview_registry_list` tool fetching from `/api/v1/edge/registry"
+    },
+    "38": {
+      "path": "ruview/PRIMER/ruview-primer#2",
+      "kind": "doc",
+      "title": "ruview — Primer",
+      "chunk": 2,
+      "preview": "## Maturity (shipped vs proposed)\n\nRuView has concrete shipped capabilities with measurable adoption, alongside forward-looking proposed features tied to emerging standards. Key milestones are fully i"
+    },
+    "39": {
+      "path": "ruview/PRIMER/ruview-primer#3",
+      "kind": "doc",
+      "title": "ruview — Primer",
+      "chunk": 3,
+      "preview": "1. **Architecture Decision Records (ADRs)**  \n   Located at `docs/adr/ADR-XXX-*.md`, these are the **authoritative technical specifications** (e.g., `ADR-052-tauri-desktop-frontend.md` governs the des"
+    },
+    "40": {
+      "path": "ruview/PRIMER/ruview-primer#4",
+      "kind": "doc",
+      "title": "ruview — Primer",
+      "chunk": 4,
+      "preview": "- **Vital Signs**: Monitor breathing and heart rate:\n  ```bash\n  cargo run -p wifi-densepose-vitals\n  ```\n  (`plugins/ruview/skills/ruview-applications/SKILL.md`).\n\n- **Pose Estimation**: Estimate 17 "
+    }
+  }
+}
