@@ -1,0 +1,11 @@
+{
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "metric": "cosine",
+  "pooling": "mean",
+  "normalize": true,
+  "queryPrefix": "",
+  "note": "Small (edge/Seed-compatible) variant. Symmetric: passages and queries embedded the same way.",
+  "builtFrom": "daa.passages.jsonl",
+  "generated": "2026-06-29T03:28:21.263Z"
+}

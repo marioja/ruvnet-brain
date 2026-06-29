@@ -3,7 +3,7 @@
   "dimensions": 0,
   "metric": "cosine",
   "name": "concepts",
-  "generated": "2026-06-28T08:03:08.564Z",
+  "generated": "2026-06-29T20:44:48.856Z",
   "repo": "ruvnet-concepts",
   "note": "L2 synthesis + per-repo primers; embedded into concepts.big.rvf via forge-big.",
   "entries": {
@@ -113,186 +113,781 @@
       "preview": "# What are RuView's core concepts — CSI (Channel State Information), ESP32 sensors, WiFi-DensePose pose estimation, and RVF cognitive containers?\n\n<!-- L2 synthesis · ACCEPTED · 4 verified source refs"
     },
     "15": {
-      "path": "ruflo/PRIMER/ruflo-primer#0",
+      "path": "agent-harness-generator/PRIMER/agent-harness-generator-primer#0",
       "kind": "doc",
-      "title": "ruflo — Primer",
+      "title": "agent-harness-generator — Primer",
       "chunk": 0,
-      "preview": "# ruflo — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What Ruflo Is "
+      "preview": "# agent-harness-generator — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for"
     },
     "16": {
-      "path": "ruflo/PRIMER/ruflo-primer#1",
+      "path": "agent-harness-generator/PRIMER/agent-harness-generator-primer#1",
       "kind": "doc",
-      "title": "ruflo — Primer",
+      "title": "agent-harness-generator — Primer",
       "chunk": 1,
-      "preview": "5. **Appliance Packaging**  \n   EXISTS: Self-contained binary generation (.rvf files) bundling kernels/models/AgentDB via the RVFA builder in `v3/@claude-flow/cli/src/appliance/rvfa-builder.ts`.\n\n6. *"
+      "preview": "4. **Host and Kernel Integration**  \n   - Resolves `@metaharness/kernel` versions at scaffold time for manifest diagnostics (`packages/create-agent-harness/src/index.ts`).  \n   - Supports multiple loo"
     },
     "17": {
-      "path": "ruflo/PRIMER/ruflo-primer#2",
+      "path": "agent-harness-generator/PRIMER/agent-harness-generator-primer#2",
       "kind": "doc",
-      "title": "ruflo — Primer",
+      "title": "agent-harness-generator — Primer",
       "chunk": 2,
-      "preview": "## 6. URL Parameter Management\nThe system provides atomic URL manipulation utilities (`ruflo/src/ruvocal/src/lib/utils/getHref.ts`):\n```typescript\nexport function getHref(\n  url: URL | string,\n  modif"
+      "preview": "#### 3. **Darwin Shield Agents**\n   - **What it does**: Provides a set of deterministic agents for analyzing and improving harnesses. These agents focus on security, static analysis, fuzz testing, and"
     },
     "18": {
-      "path": "ruflo/PRIMER/ruflo-primer#3",
+      "path": "agent-harness-generator/PRIMER/agent-harness-generator-primer#3",
       "kind": "doc",
-      "title": "ruflo — Primer",
+      "title": "agent-harness-generator — Primer",
       "chunk": 3,
-      "preview": "# Where the documentation lives\n\nRuflo's documentation is architecturally organized across several formal systems with clear ownership and maintenance paths:\n\n## 1. Architecture Decision Records (ADRs"
+      "preview": "### SHIPPED CAPABILITIES (EXIST IN IMPLEMENTATION)\n1. **MCP Primitive Integration**  \n   Fully implemented host integration model (`src/mcp/{server,tools,resources,prompts,policy,audit}.ts`) with 1:1 "
     },
     "19": {
-      "path": "ruflo/PRIMER/ruflo-primer#4",
+      "path": "agent-harness-generator/PRIMER/agent-harness-generator-primer#4",
       "kind": "doc",
-      "title": "ruflo — Primer",
+      "title": "agent-harness-generator — Primer",
       "chunk": 4,
-      "preview": "### Settings Management\nUser settings are managed through:\n- Default settings defined in DEFAULT_SETTINGS (referenced in `ruflo/src/ruvocal/src/routes/login/callback/updateUser.ts`)\n- Settings API end"
+      "preview": "2. **User-facing guides**  \n   The plain-language `docs/USERGUIDE.md` explains core concepts without jargon. It covers:\n   - What a harness is (`\"A wrapper that adds project-specific knowledge and saf"
     },
     "20": {
-      "path": "ruvector/PRIMER/ruvector-primer#0",
-      "kind": "doc",
-      "title": "ruvector — Primer",
-      "chunk": 0,
-      "preview": "# ruvector — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What It Is "
-    },
-    "21": {
-      "path": "ruvector/PRIMER/ruvector-primer#1",
-      "kind": "doc",
-      "title": "ruvector — Primer",
-      "chunk": 1,
-      "preview": "5. **Sparse Inference Embeddings**  \n   Implementation: `crates/ruvector-sparse-inference/src/integration/ruvector.rs`  \n   - Generates embeddings via PowerInfer-style sparse FFNs  \n   - Configurable "
-    },
-    "22": {
-      "path": "ruvector/PRIMER/ruvector-primer#2",
-      "kind": "doc",
-      "title": "ruvector — Primer",
-      "chunk": 2,
-      "preview": "## Nervous System Integration\nThe **biologically inspired memory system** (`crates/ruvector-nervous-system/src/integration/ruvector.rs`) combines:\n- Hopfield networks for associative memory (`hopfield"
-    },
-    "23": {
-      "path": "ruvector/PRIMER/ruvector-primer#3",
-      "kind": "doc",
-      "title": "ruvector — Primer",
-      "chunk": 3,
-      "preview": "**Application Gallery EXISTS** (`docs/adr/ADR-113-rvf-app-gallery-ruvix-applications.md`):\n- Templated RVF container management\n- Template search/load/configure capabilities\n- Custom template CRUD ope"
-    },
-    "24": {
-      "path": "ruvector/PRIMER/ruvector-primer#4",
-      "kind": "doc",
-      "title": "ruvector — Primer",
-      "chunk": 4,
-      "preview": "### For PostgreSQL integration  \nEXISTS: The complete PostgreSQL extension installer (`npm/packages/postgres-cli/src/commands/install.ts`):  \n```bash\n# Install CLI globally\nnpm install -g @ruvector/cl"
-    },
-    "25": {
       "path": "agentdb/PRIMER/agentdb-primer#0",
       "kind": "doc",
       "title": "agentdb — Primer",
       "chunk": 0,
       "preview": "# agentdb — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What AgentDB"
     },
-    "26": {
+    "21": {
       "path": "agentdb/PRIMER/agentdb-primer#1",
       "kind": "doc",
       "title": "agentdb — Primer",
       "chunk": 1,
       "preview": "### 4. Production MCP protocol server  \nEXISTS in `src/mcp/agentdb-mcp-server.ts`:  \n- Exposes vector operations via Model Context Protocol  \n- Integrates with Claude Desktop using stdio transport  \n-"
     },
-    "27": {
+    "22": {
       "path": "agentdb/PRIMER/agentdb-primer#2",
       "kind": "doc",
       "title": "agentdb — Primer",
       "chunk": 2,
-      "preview": "## 5. Production-Grade Features (`benchmarks/runner.ts` / `src/mcp/agentdb-mcp-server.ts`)\nThe system includes enterprise-ready capabilities:\n- Multi-threaded ACID-compliant operations (`simulation/re"
+      "preview": "Note: Some initialization workflows currently require CLI usage before programmatic access (as noted in `examples/quickstart.js`), though this will be streamlined in future versions.\n\n## Maturity (shi"
     },
-    "28": {
+    "23": {
       "path": "agentdb/PRIMER/agentdb-primer#3",
       "kind": "doc",
       "title": "agentdb — Primer",
       "chunk": 3,
-      "preview": "#### Summary\nAgentDB is a mature system with a robust set of shipped features, particularly in hyperbolic geometry, attention mechanisms, and advanced browser capabilities. Proposed features, such as "
+      "preview": "AgentDB's documentation is systematically organized across multiple directories with clear versioning and purpose. Here's the authoritative breakdown:\n\n## Core Documentation (`docs/`)\nThe primary docu"
     },
-    "29": {
+    "24": {
       "path": "agentdb/PRIMER/agentdb-primer#4",
       "kind": "doc",
       "title": "agentdb — Primer",
       "chunk": 4,
-      "preview": "Batch insert for efficiency (141x faster than sequential per `tests/docker/test-clean-install.mjs`):\n\n```javascript\nawait db.executeTool('agentdb_insert_batch', {\n  items: [\n    {text: \"JWT auth guide"
+      "preview": "```javascript\nconst results = await db.executeTool('agentdb_search', {\n  query: \"secure authentication methods\",\n  limit: 5,\n  filters: {\n    tags: [\"auth\"],\n    metadata: { priority: \"high\" }\n  }\n});"
+    },
+    "25": {
+      "path": "agentic-flow/PRIMER/agentic-flow-primer#0",
+      "kind": "doc",
+      "title": "agentic-flow — Primer",
+      "chunk": 0,
+      "preview": "# agentic-flow — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**agentic"
+    },
+    "26": {
+      "path": "agentic-flow/PRIMER/agentic-flow-primer#1",
+      "kind": "doc",
+      "title": "agentic-flow — Primer",
+      "chunk": 1,
+      "preview": "5. **Standalone MCP Server Operation**  \n   EXISTING IMPLEMENTATION: Runs as a standalone server via stdio with security-hardened command execution (`agentic-flow/src/mcp/standalone-stdio.ts`). Preven"
+    },
+    "27": {
+      "path": "agentic-flow/PRIMER/agentic-flow-primer#2",
+      "kind": "doc",
+      "title": "agentic-flow — Primer",
+      "chunk": 2,
+      "preview": "## 5. Cross-Platform Integration (EXISTS)\n- **QUIC Transport Layer**: High-performance networking (`packages/agentic-jujutsu/src/integrations/agentic_flow.rs`)  \n- **AST Manipulation**: For agentic-ju"
+    },
+    "28": {
+      "path": "agentic-flow/PRIMER/agentic-flow-primer#3",
+      "kind": "doc",
+      "title": "agentic-flow — Primer",
+      "chunk": 3,
+      "preview": "3. **REST API**  \n   - Planned for future releases (`docs/architecture/module-structure-diagram.md`).  \n\n#### Summary\nAgentic-flow is production-ready for core features like AgentDB integration, Docke"
+    },
+    "29": {
+      "path": "agentic-flow/PRIMER/agentic-flow-primer#4",
+      "kind": "doc",
+      "title": "agentic-flow — Primer",
+      "chunk": 4,
+      "preview": "### 2️⃣ DEPLOYMENT  \n**Cloud Swarm Creation**  \n```bash\nnpx flow-nexus swarm create --topology mesh --max-agents 50  # Source: `agentic-flow/docs/guides/DEPLOYMENT.md`\n```\n\n**OR Kubernetes Deployment*"
     },
     "30": {
+      "path": "agenticow/PRIMER/agenticow-primer#0",
+      "kind": "doc",
+      "title": "agenticow — Primer",
+      "chunk": 0,
+      "preview": "# agenticow — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What it is"
+    },
+    "31": {
+      "path": "agenticow/PRIMER/agenticow-primer#1",
+      "kind": "doc",
+      "title": "agenticow — Primer",
+      "chunk": 1,
+      "preview": "2. **Read-Through Query** *(exact parent ∪ child-edits, tombstone-aware)*  \n   - EXISTS: Merges and reranks results across lineage chains with child edits taking precedence (`src/index.js`).  \n   - Pr"
+    },
+    "32": {
+      "path": "agenticow/PRIMER/agenticow-primer#2",
+      "kind": "doc",
+      "title": "agenticow — Primer",
+      "chunk": 2,
+      "preview": "## 3. Compliance Lineage (`examples/compliance-lineage.mjs`)\n- **EXISTS**: Full audit trail and GDPR-compliant data removal\n- Works by:\n  - Tracking provenance via branch labels (\"author = branch labe"
+    },
+    "33": {
+      "path": "agenticow/PRIMER/agenticow-primer#3",
+      "kind": "doc",
+      "title": "agenticow — Primer",
+      "chunk": 3,
+      "preview": "The documentation for **agenticow** is organized across several key locations, each serving a distinct purpose. Here’s a complete breakdown of where to find what:\n\n#### **Core Documentation**\n- **API "
+    },
+    "34": {
+      "path": "agenticow/PRIMER/agenticow-primer#4",
+      "kind": "doc",
+      "title": "agenticow — Primer",
+      "chunk": 4,
+      "preview": "### 3. Branch for agent operations\nCreate isolated branches for parallel agents:\n```shell\nagenticow branch memory.rvf --as agent1  # Creates branch in ~0.5ms (162 B)\nagenticow branch memory.rvf --as a"
+    },
+    "35": {
+      "path": "cve-bench/PRIMER/cve-bench-primer#0",
+      "kind": "doc",
+      "title": "cve-bench — Primer",
+      "chunk": 0,
+      "preview": "# cve-bench — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**CVE-bench*"
+    },
+    "36": {
+      "path": "cve-bench/PRIMER/cve-bench-primer#1",
+      "kind": "doc",
+      "title": "cve-bench — Primer",
+      "chunk": 1,
+      "preview": "3. **Grade model submissions against gold standards**  \n   EXISTS in `scripts/evaluate.mjs --grade`  \n   - Tests model patches with security regression tests (SOURCE 4: \"base + model_patch + test_patc"
+    },
+    "37": {
+      "path": "cve-bench/PRIMER/cve-bench-primer#2",
+      "kind": "doc",
+      "title": "cve-bench — Primer",
+      "chunk": 2,
+      "preview": "### 4. **Conformance Firewall in Grading**  \n- **EXISTS** in `scripts/evaluate.mjs` (SOURCE 3) via `--grade` flag  \n  Ensures fairness:  \n  - **Gold patch NEVER used during grading** — Only the solver"
+    },
+    "38": {
+      "path": "cve-bench/PRIMER/cve-bench-primer#3",
+      "kind": "doc",
+      "title": "cve-bench — Primer",
+      "chunk": 3,
+      "preview": "**PROPOSED/NOT YET SHIPPED:**  \n- Multi-round campaign automation (tracked in `scripts/run-campaign.mjs` but not yet integrated into main workflow)  \n- Expanded ecosystem support (beyond PyPI) - curre"
+    },
+    "39": {
+      "path": "cve-bench/PRIMER/cve-bench-primer#4",
+      "kind": "doc",
+      "title": "cve-bench — Primer",
+      "chunk": 4,
+      "preview": "## 3. Running Evaluations (SOURCE 3, SOURCE 6)\n### Validate Existing Dataset\n```bash\nnpm run validate  # Shortcut for `evaluate.mjs --validate` (SOURCE 6)\n# Equivalent to:\nnode scripts/evaluate.mjs --"
+    },
+    "40": {
+      "path": "daa/PRIMER/daa-primer#0",
+      "kind": "doc",
+      "title": "daa — Primer",
+      "chunk": 0,
+      "preview": "# daa — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**daa (Decentraliz"
+    },
+    "41": {
+      "path": "daa/PRIMER/daa-primer#1",
+      "kind": "doc",
+      "title": "daa — Primer",
+      "chunk": 1,
+      "preview": "7. **CLI Tooling**: The system EXISTS for project initialization (`daa-cli/src/commands/init.rs`), development, testing, and benchmarking (`packages/daa-sdk/cli/index.ts`) (SOURCES 5, 6).  \n\n8. **Econ"
+    },
+    "42": {
+      "path": "daa/PRIMER/daa-primer#2",
+      "kind": "doc",
+      "title": "daa — Primer",
+      "chunk": 2,
+      "preview": "#### 7. **Orchestrator and Workflow Engine**\nThe Orchestrator manages the autonomy loop of DAA agents, enabling complex workflows and decision-making processes. The Workflow Engine handles intricate f"
+    },
+    "43": {
+      "path": "daa/PRIMER/daa-primer#3",
+      "kind": "doc",
+      "title": "daa — Primer",
+      "chunk": 3,
+      "preview": "#### ⚠️ Proposed Features (Not Yet Shippable)\n1. **Build System**  \n   - QuDAG NAPI and SDK builds are currently broken (`docs/INTEGRATION-STATUS.md`)  \n   - Missing `tsconfig.json` and workspace conf"
+    },
+    "44": {
+      "path": "daa/PRIMER/daa-primer#4",
+      "kind": "doc",
+      "title": "daa — Primer",
+      "chunk": 4,
+      "preview": "5. **TSDK Entrypoint**  \n   Location: `packages/daa-sdk/src/index.ts`  \n   - **Unified SDK** docs for Node.js/WASM binding detection  \n   - **EXPORTED** orchestrator and prime modules (per `export * f"
+    },
+    "45": {
+      "path": "dspy.ts/PRIMER/dspy.ts-primer#0",
+      "kind": "doc",
+      "title": "dspy.ts — Primer",
+      "chunk": 0,
+      "preview": "# dspy.ts — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**DSPy.ts** is"
+    },
+    "46": {
+      "path": "dspy.ts/PRIMER/dspy.ts-primer#1",
+      "kind": "doc",
+      "title": "dspy.ts — Primer",
+      "chunk": 1,
+      "preview": "Note: All language model integrations shown in examples use OpenRouter API by default, requiring an API key for operation (as shown in multiple example setup comments across `examples/*/index.ts` file"
+    },
+    "47": {
+      "path": "dspy.ts/PRIMER/dspy.ts-primer#2",
+      "kind": "doc",
+      "title": "dspy.ts — Primer",
+      "chunk": 2,
+      "preview": "1. **Core Modules System**  \n   - EXIST: `Module` base class with signatures (`src/core/module.ts`)  \n   - EXIST: `Pipeline` orchestration with error handling (`src/core/pipeline.ts`)  \n\n2. **Predict "
+    },
+    "48": {
+      "path": "dspy.ts/PRIMER/dspy.ts-primer#3",
+      "kind": "doc",
+      "title": "dspy.ts — Primer",
+      "chunk": 3,
+      "preview": "The documentation system DOES NOT currently include:\n- API documentation for every single module (only core ones are documented)\n- Detailed tutorials beyond the working examples\n- Language-specific gu"
+    },
+    "49": {
+      "path": "fact/PRIMER/fact-primer#0",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 0,
+      "preview": "# fact — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What it is & wh"
+    },
+    "50": {
+      "path": "fact/PRIMER/fact-primer#1",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 1,
+      "preview": "2. **Resilient Error Handling**  \n   EXISTS - Implements robust error handling during execution  \n   Source: `examples/arcade-dev/04_error_handling/resilient_execution.py` (\"Setup FACT imports using t"
+    },
+    "51": {
+      "path": "fact/PRIMER/fact-primer#2",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 2,
+      "preview": "## 2. Tool-Based Architecture (Main Components Implemented)\n**EXISTS**: Secure containerized functions are registered via:\n- **Tool Registry** (`src/tools/registry.py` per `plans/critical-components-p"
+    },
+    "52": {
+      "path": "fact/PRIMER/fact-primer#3",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 3,
+      "preview": "3. **Monitoring Core** (`src/monitoring/`)\n   - **Metrics collection**: EXISTS in `src/monitoring/metrics.py`\n   - **Optimization**: EXISTS in `src/monitoring/performance_optimizer.py`\n\n4. **Memory Sy"
+    },
+    "53": {
+      "path": "fact/PRIMER/fact-primer#4",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 4,
+      "preview": "4. **Component Documentation** (`6_components_reference.md`):  \n   Detailed documentation for individual components, including their properties, methods, and usage examples. This is critical for devel"
+    },
+    "54": {
+      "path": "fact/PRIMER/fact-primer#5",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 5,
+      "preview": "#### Implementation and Architecture Documentation\nThe architecture and implementation status are documented to provide transparency into the system's development:\n\n- **Implementation Status Report** "
+    },
+    "55": {
+      "path": "fact/PRIMER/fact-primer#6",
+      "kind": "doc",
+      "title": "fact — Primer",
+      "chunk": 6,
+      "preview": "# Quick benchmark\n./scripts/benchmark\n```\n\n### UNCOVERED CAPABILITIES\nThe sources show no implementation for:\n1. Native mobile app deployment\n2. Direct Snowflake/BigQuery connectors\n3. Automated tradi"
+    },
+    "56": {
+      "path": "qudag/PRIMER/qudag-primer#0",
+      "kind": "doc",
+      "title": "qudag — Primer",
+      "chunk": 0,
+      "preview": "# qudag — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**QuDAG (Quantum"
+    },
+    "57": {
+      "path": "qudag/PRIMER/qudag-primer#1",
+      "kind": "doc",
+      "title": "qudag — Primer",
+      "chunk": 1,
+      "preview": "Everything listed above is explicitly implemented—verified via source paths. No guessing or invention.\n\n## Core concepts & how they work\n\nEXISTS and implements atomic balance tracking through:\n- A dis"
+    },
+    "58": {
+      "path": "qudag/PRIMER/qudag-primer#2",
+      "kind": "doc",
+      "title": "qudag — Primer",
+      "chunk": 2,
+      "preview": "2. **Core DAG Module**  \n   The `core/dag` module is shipped and exports all necessary types for DAG operations, including `QrDag`, `Dag`, `Vertex`, and `Consensus` (`core/dag/MODULE_STATUS.md`). The "
+    },
+    "59": {
+      "path": "qudag/PRIMER/qudag-primer#3",
+      "kind": "doc",
+      "title": "qudag — Primer",
+      "chunk": 3,
+      "preview": "## Node Operation Guides\n**Detailed node management** documentation exists in TWO authoritative locations:\n1. `/cli-standalone/docs/node-management.md` - Complete reference for foreground/background o"
+    },
+    "60": {
+      "path": "qudag/PRIMER/qudag-primer#4",
+      "kind": "doc",
+      "title": "qudag — Primer",
+      "chunk": 4,
+      "preview": "## Monitoring\n```bash\nqudag monitor --metrics  # Live metrics\nqudag logs show         # View logs\n```\nLogs are stored at `~/.local/share/qudag/logs/`.  \n*(Source: `docs/cli/quickstart.md`, `qudag-npm/"
+    },
+    "61": {
+      "path": "ruflo/PRIMER/ruflo-primer#0",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 0,
+      "preview": "# ruflo — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**What Ruflo Is "
+    },
+    "62": {
+      "path": "ruflo/PRIMER/ruflo-primer#1",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 1,
+      "preview": "5. **Appliance Packaging**  \n   EXISTS: Self-contained binary generation (.rvf files) bundling kernels/models/AgentDB via the RVFA builder in `v3/@claude-flow/cli/src/appliance/rvfa-builder.ts`.\n\n6. *"
+    },
+    "63": {
+      "path": "ruflo/PRIMER/ruflo-primer#2",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 2,
+      "preview": "## 6. URL Parameter Management\nThe system provides atomic URL manipulation utilities (`ruflo/src/ruvocal/src/lib/utils/getHref.ts`):\n```typescript\nexport function getHref(\n  url: URL | string,\n  modif"
+    },
+    "64": {
+      "path": "ruflo/PRIMER/ruflo-primer#3",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 3,
+      "preview": "Ruflo's documentation is architecturally organized across several formal systems with clear ownership and maintenance paths:\n\n## 1. Architecture Decision Records (ADRs)  \n✅ EXISTS in `v3/implementatio"
+    },
+    "65": {
+      "path": "ruflo/PRIMER/ruflo-primer#4",
+      "kind": "doc",
+      "title": "ruflo — Primer",
+      "chunk": 4,
+      "preview": "### Settings Management\nUser settings are managed through:\n- Default settings defined in DEFAULT_SETTINGS (referenced in `ruflo/src/ruvocal/src/routes/login/callback/updateUser.ts`)\n- Settings API end"
+    },
+    "66": {
       "path": "rulake/PRIMER/rulake-primer#0",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 0,
-      "preview": "# rulake — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What it is & "
+      "preview": "# rulake — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\nruLake is a **w"
     },
-    "31": {
+    "67": {
       "path": "rulake/PRIMER/rulake-primer#1",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 1,
-      "preview": "3. **List available tools with capability-based filtering**  \n   The `tools/list` endpoint lists tools filtered by the server's effective capabilities. This is implemented in `crates/mcp-server/src/se"
+      "preview": "4. **Serve resources like stats and backend-specific bundles**  \n   The MCP server provides resources such as `rulake://stats` and `rulake://stats/by-backend`, including per-backend bundle resources. "
     },
-    "32": {
+    "68": {
       "path": "rulake/PRIMER/rulake-primer#2",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 2,
-      "preview": "## 1. RaBitQ Vector Search (`crates/core/src/lake.rs`)\nThe primary search mechanism uses RaBitQ (Random Binary Quantization) for approximate nearest neighbor search with L2² scoring. Key capabilities:"
+      "preview": "## 2. Quantum Circuit Simulation (`crates/mcp-ruqu/src/ruqu_core_engine.rs`)\nEXISTS: Full quantum gate simulation supporting 8 core gates (H/X/Y/Z/S/T/Rz/Cx) through ruqu-core integration. The engine:"
     },
-    "33": {
+    "69": {
       "path": "rulake/PRIMER/rulake-primer#3",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 3,
-      "preview": "2. **Accelerator Plane**  \n   The accelerator plane is implemented, supporting multiple kernels (CPU, GPU, etc.) with deterministic and non-deterministic paths (`docs/adrs/ADR-157-optional-accelerator"
+      "preview": "3. **ruLake Console**  \n   The ruLake Console, built with Vite + React and hosted on GitHub Pages, is shipped (`docs/adrs/ADR-006-rulake-console-vite-github-pages.md`). The console supports both demo "
     },
-    "34": {
+    "70": {
       "path": "rulake/PRIMER/rulake-primer#4",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 4,
-      "preview": "In summary, ruLake's core features are fully shipped and operational, with a clear roadmap for future enhancements. The shipped features are well-documented, tested, and integrated into the ecosystem,"
+      "preview": "## Architectural Decision Records (ADRs)\nThe **single source of truth** for technical decisions, stored in Markdown files at `/docs/adrs/`. Each ADR documents a specific architectural choice with:\n- S"
     },
-    "35": {
+    "71": {
       "path": "rulake/PRIMER/rulake-primer#5",
       "kind": "doc",
       "title": "rulake — Primer",
       "chunk": 5,
-      "preview": "#### Basic Workflow\n1. **CLI Usage**:\n   - Run vector searches: `/rulake-query [collection] [query_vector]`\n   - Discover available backends: `/rulake-discover`\n   - Verify bundles: Use the `verifyBun"
+      "preview": "#### Server Configuration\n1. **MCP Server**:\n   - Run with `--capabilities read` (default) or higher privileges (`crates/mcp-server/src/server.rs`)\n   - Access stats at `rulake://stats` and `rulake://"
     },
-    "36": {
+    "72": {
+      "path": "rupixel/PRIMER/rupixel-primer#0",
+      "kind": "doc",
+      "title": "rupixel — Primer",
+      "chunk": 0,
+      "preview": "# rupixel — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**rupixel is a"
+    },
+    "73": {
+      "path": "rupixel/PRIMER/rupixel-primer#1",
+      "kind": "doc",
+      "title": "rupixel — Primer",
+      "chunk": 1,
+      "preview": "2. **Real-Time Video Keyframe Search (Browser)**  \n   EXISTS in `docs/live.js`: Client-side video frame sampling with CLIP ViT-B/32 embeddings (WebGPU/CPU fallback). Skips near-identical frames and ra"
+    },
+    "74": {
+      "path": "rupixel/PRIMER/rupixel-primer#2",
+      "kind": "doc",
+      "title": "rupixel — Primer",
+      "chunk": 2,
+      "preview": "## 3. Embedding Abstraction (`rust/pixelrag-core/src/embedding.rs`)\nEXISTS as a generic trait with two concrete implementations:\n1. **M1 Synthetic** (deterministic test backend in `rust/pixelrag-encod"
+    },
+    "75": {
+      "path": "rupixel/PRIMER/rupixel-primer#3",
+      "kind": "doc",
+      "title": "rupixel — Primer",
+      "chunk": 3,
+      "preview": "| Component             | Status      | Location               | Notes |\n|-----------------------|-------------|------------------------|-------|\n| Browser Video RAG     | Shipped     | `docs/live.js/"
+    },
+    "76": {
+      "path": "rupixel/PRIMER/rupixel-primer#4",
+      "kind": "doc",
+      "title": "rupixel — Primer",
+      "chunk": 4,
+      "preview": "#### In-browser Demos\n1. **Real-time video search**: Open `docs/live.html` in your browser to experience real-time video search using CLIP ViT-B/32. This demo allows you to point a camera or screen at"
+    },
+    "77": {
+      "path": "ruv-fann/PRIMER/ruv-fann-primer#0",
+      "kind": "doc",
+      "title": "ruv-fann — Primer",
+      "chunk": 0,
+      "preview": "# ruv-fann — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**ruv-fann is"
+    },
+    "78": {
+      "path": "ruv-fann/PRIMER/ruv-fann-primer#1",
+      "kind": "doc",
+      "title": "ruv-fann — Primer",
+      "chunk": 1,
+      "preview": "5. **Neural Network Integration with Forecasting Models**  \n   ruv-fann provides a bridge to integrate its neural networks with forecasting models, enabling seamless use in predictive tasks.  \n   Sour"
+    },
+    "79": {
+      "path": "ruv-fann/PRIMER/ruv-fann-primer#2",
+      "kind": "doc",
+      "title": "ruv-fann — Primer",
+      "chunk": 2,
+      "preview": "#### 4. **Transformer Models**\nruv-FANN supports transformer-based forecasting models, implemented using MLP networks to approximate attention mechanisms.  \n- **MLP-Based Attention**: The module `neur"
+    },
+    "80": {
+      "path": "ruv-fann/PRIMER/ruv-fann-primer#3",
+      "kind": "doc",
+      "title": "ruv-fann — Primer",
+      "chunk": 3,
+      "preview": "6. **Memory Architecture**  \n   - EXISTS in memory hierarchy (`ruv-swarm/npm/docs/PERFORMANCE_FEATURES.md`)  \n   - Implements L1-L4 memory layers with defined access times and capacities  \n   - Suppor"
+    },
+    "81": {
+      "path": "ruv-fann/PRIMER/ruv-fann-primer#4",
+      "kind": "doc",
+      "title": "ruv-fann — Primer",
+      "chunk": 4,
+      "preview": "For cascade training (dynamic network growth):\n```rust\nsrc/cascade.rs  // Contains CascadeConfig shown in [SOURCE 3]\n```\n\n## Execution Environments\n\n1. **Node.js CLI**: Fully functional via global ins"
+    },
+    "82": {
+      "path": "ruvector/PRIMER/ruvector-primer#0",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 0,
+      "preview": "# ruvector — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\nRuvector is a"
+    },
+    "83": {
+      "path": "ruvector/PRIMER/ruvector-primer#1",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 1,
+      "preview": "5. **Sparse Inference Embeddings**  \n   Implementation: `crates/ruvector-sparse-inference/src/integration/ruvector.rs`  \n   - Generates embeddings via PowerInfer-style sparse FFNs  \n   - Configurable "
+    },
+    "84": {
+      "path": "ruvector/PRIMER/ruvector-primer#2",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 2,
+      "preview": "Configured via `NervousConfig` with:\n- 78x dimensionality expansion for pattern separation (`separation_output_dim: input_dim * 78`)\n- 2% sparsity through k-winner selection (`separation_k: (input_dim"
+    },
+    "85": {
+      "path": "ruvector/PRIMER/ruvector-primer#3",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 3,
+      "preview": "**NPX Witness Verification IS A PROPOSAL** (`docs/adr/ADR-038-npx-ruvector-rvlite-witness-integration.md`):\n- RVF verification exists in Rust (`rvf-cli`)\n- No current Node.js CLI exposure\n- WASM backe"
+    },
+    "86": {
+      "path": "ruvector/PRIMER/ruvector-primer#4",
+      "kind": "doc",
+      "title": "ruvector — Primer",
+      "chunk": 4,
+      "preview": "### For Node.js projects  \nEXISTS: The hooks system provides immediate automation (`docs/hooks/USER_GUIDE.md`):  \n```bash\n# Initialize hooks in your project\nnpx ruvector hooks init\n\n# Install Claude C"
+    },
+    "87": {
       "path": "ruview/PRIMER/ruview-primer#0",
       "kind": "doc",
       "title": "ruview — Primer",
       "chunk": 0,
-      "preview": "# ruview — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n# What it is & "
+      "preview": "# ruview — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\nRuView is a **c"
     },
-    "37": {
+    "88": {
       "path": "ruview/PRIMER/ruview-primer#1",
       "kind": "doc",
       "title": "ruview — Primer",
       "chunk": 1,
-      "preview": "4. **Edge Module Registry**  \n   EXISTS - Lists available Cognitum cogs (`tools/ruview-mcp/src/tools/registry-list.ts`)  \n   Implements `ruview_registry_list` tool fetching from `/api/v1/edge/registry"
+      "preview": "5. **Training Jobs**  \n   EXISTS - Manages background training tasks (`tools/ruview-mcp/src/index.ts`)  \n   Includes job initiation (`ruview_train_count`) and polling (`ruview_job_status`)\n\n6. **Confi"
     },
-    "38": {
+    "89": {
       "path": "ruview/PRIMER/ruview-primer#2",
       "kind": "doc",
       "title": "ruview — Primer",
       "chunk": 2,
-      "preview": "## Maturity (shipped vs proposed)\n\nRuView has concrete shipped capabilities with measurable adoption, alongside forward-looking proposed features tied to emerging standards. Key milestones are fully i"
+      "preview": "RuView has concrete shipped capabilities with measurable adoption, alongside forward-looking proposed features tied to emerging standards. Key milestones are fully implemented in production firmware w"
     },
-    "39": {
+    "90": {
       "path": "ruview/PRIMER/ruview-primer#3",
       "kind": "doc",
       "title": "ruview — Primer",
       "chunk": 3,
       "preview": "1. **Architecture Decision Records (ADRs)**  \n   Located at `docs/adr/ADR-XXX-*.md`, these are the **authoritative technical specifications** (e.g., `ADR-052-tauri-desktop-frontend.md` governs the des"
     },
-    "40": {
+    "91": {
       "path": "ruview/PRIMER/ruview-primer#4",
       "kind": "doc",
       "title": "ruview — Primer",
       "chunk": 4,
       "preview": "- **Vital Signs**: Monitor breathing and heart rate:\n  ```bash\n  cargo run -p wifi-densepose-vitals\n  ```\n  (`plugins/ruview/skills/ruview-applications/SKILL.md`).\n\n- **Pose Estimation**: Estimate 17 "
+    },
+    "92": {
+      "path": "safla/PRIMER/safla-primer#0",
+      "kind": "doc",
+      "title": "safla — Primer",
+      "chunk": 0,
+      "preview": "# safla — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**SAFLA (Self-Aw"
+    },
+    "93": {
+      "path": "safla/PRIMER/safla-primer#1",
+      "kind": "doc",
+      "title": "safla — Primer",
+      "chunk": 1,
+      "preview": "3. **Hybrid Memory Architecture Support**  \n   safla includes support for hybrid memory architecture, which is referenced in `safla/cli_implementations.py`. This capability enhances memory management "
+    },
+    "94": {
+      "path": "safla/PRIMER/safla-primer#2",
+      "kind": "doc",
+      "title": "safla — Primer",
+      "chunk": 2,
+      "preview": "### System Architect (🏗️)\n- Designs system architecture through constraint analysis (`tutorial/concepts.md`)\n- Plans workflows using strategic thinking capabilities (`tutorial/troubleshooting.md`)\n\n#"
+    },
+    "95": {
+      "path": "safla/PRIMER/safla-primer#3",
+      "kind": "doc",
+      "title": "safla — Primer",
+      "chunk": 3,
+      "preview": "4. **Security & Compliance** (`docs/guide/28-security.md`):  \n   - ✅ **Threat Mitigations**:  \n     *\"Validate all input at the application boundary… Implement multi-factor authentication\"*  \n   - ✅ *"
+    },
+    "96": {
+      "path": "safla/PRIMER/safla-primer#4",
+      "kind": "doc",
+      "title": "safla — Primer",
+      "chunk": 4,
+      "preview": "#### 1. **Installation**\nInstall safla using pip or conda. The installation process is straightforward and well-documented.  \n- **Using pip (Recommended):**  \n  ```bash\n  pip install safla\n  ```  \n  A"
+    },
+    "97": {
+      "path": "sparc/PRIMER/sparc-primer#0",
+      "kind": "doc",
+      "title": "sparc — Primer",
+      "chunk": 0,
+      "preview": "# sparc — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\n**SPARC is a com"
+    },
+    "98": {
+      "path": "sparc/PRIMER/sparc-primer#1",
+      "kind": "doc",
+      "title": "sparc — Primer",
+      "chunk": 1,
+      "preview": "5. **Console Output Handling**  \n   Sparc can manage and display text content in the console, as implemented in `sparc_cli/console/output.py`. This includes handling shared console instances and text "
+    },
+    "99": {
+      "path": "sparc/PRIMER/sparc-primer#2",
+      "kind": "doc",
+      "title": "sparc — Primer",
+      "chunk": 2,
+      "preview": "1. **CLI Tool**  \n   The SPARC CLI is fully implemented and documented, providing a command-line interface for AI-assisted programming and research tasks. It supports multiple LLM providers, including"
+    },
+    "100": {
+      "path": "sparc/PRIMER/sparc-primer#3",
+      "kind": "doc",
+      "title": "sparc — Primer",
+      "chunk": 3,
+      "preview": "3. **Contributing Guidelines**  \n   The contributing guidelines (`CONTRIBUTING.md`) outline the process for contributing to the SPARC Framework, but they are not directly tied to a shipped feature.  \n"
+    },
+    "101": {
+      "path": "sparc/PRIMER/sparc-primer#4",
+      "kind": "doc",
+      "title": "sparc — Primer",
+      "chunk": 4,
+      "preview": "1. **Required API keys** (set as env vars):  \n   ```bash\n   # Minimal setup:\n   E2B_API_KEY=\"your-key\"  # (ui/README.md)\n   OPENAI_API_KEY=\"your-key\" OR ANTHROPIC_API_KEY=\"your-key\"  # (ui/README.md)\n"
+    },
+    "102": {
+      "path": "synthlang/PRIMER/synthlang-primer#0",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 0,
+      "preview": "# synthlang — Primer\n\n<!-- Generated primer · grounded in real source via rerankKb (big) · archetypes: what, capabilities, concepts, maturity, docs, use -->\n\n## What it is & who it's for\n\nSynthLang is"
+    },
+    "103": {
+      "path": "synthlang/PRIMER/synthlang-primer#1",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 1,
+      "preview": "4. **Symbolic Compression**  \n   Specialized symbol handling for compression is implemented in `proxy/src/app/synthlang/compression/strategies.py` (SOURCE 5), with symbol management in `proxy/src/app/"
+    },
+    "104": {
+      "path": "synthlang/PRIMER/synthlang-primer#2",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 2,
+      "preview": "- **Line Structure**: Each line must start with a symbol (↹, ⊕, Σ) and should not exceed 30 characters. This rule ensures brevity and clarity.\n- **Data Flow**: The processing pipeline must start with "
+    },
+    "105": {
+      "path": "synthlang/PRIMER/synthlang-primer#3",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 3,
+      "preview": "### Summary\nSynthLang's core concepts are designed to provide a structured and efficient way to process, translate, and generate prompts. The use of core symbols, operators, and format rules ensures c"
+    },
+    "106": {
+      "path": "synthlang/PRIMER/synthlang-primer#4",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 4,
+      "preview": "## Where the documentation lives\n\nSynthLang's documentation is **comprehensively organized** across multiple locations with clear purposes and boundaries. All paths shown below are verbatim from the s"
+    },
+    "107": {
+      "path": "synthlang/PRIMER/synthlang-primer#5",
+      "kind": "doc",
+      "title": "synthlang — Primer",
+      "chunk": 5,
+      "preview": "### 2. Proxy Integration (exists in `proxy/src/cli/docs/tutorials/proxy_integration_tutorial.md`)\nStart local proxy:\n```bash\nsynthlang proxy serve --port 8000\n```\nUse chat completion:\n```bash\nsynthlan"
+    },
+    "108": {
+      "path": "ruflo/CARD/ruflo-card",
+      "kind": "doc",
+      "title": "ruflo — Capability",
+      "chunk": 0,
+      "preview": "ruflo — RuvNet's agent orchestration engine. Use it to coordinate swarms of agents working in parallel, run multiple coding agents at once that share state and memory, spawn agents, route and orchestr"
+    },
+    "109": {
+      "path": "ruvector/CARD/ruvector-card",
+      "kind": "doc",
+      "title": "ruvector — Capability",
+      "chunk": 0,
+      "preview": "ruvector — RuvNet's high-performance vector database and search engine, written in Rust with SIMD-optimized HNSW indexing and an `.rvf` binary container format (plus WASM bindings for in-browser use)."
+    },
+    "110": {
+      "path": "agentdb/CARD/agentdb-card",
+      "kind": "doc",
+      "title": "agentdb — Capability",
+      "chunk": 0,
+      "preview": "agentdb — RuvNet's cognitive database for agent memory, combining vector search with graph relationships and explainable recall. Use it to give an agent durable, persistent memory that survives across"
+    },
+    "111": {
+      "path": "rulake/CARD/rulake-card",
+      "kind": "doc",
+      "title": "rulake — Capability",
+      "chunk": 0,
+      "preview": "rulake — RuvNet's self-optimizing, witness-anchored vector cache and working-memory layer that sits in front of a vector store. Use it as a caching layer to speed up repeated vector queries with fast "
+    },
+    "112": {
+      "path": "ruview/CARD/ruview-card",
+      "kind": "doc",
+      "title": "ruview — Capability",
+      "chunk": 0,
+      "preview": "ruview — RuvNet's camera-free WiFi sensing system that turns ordinary WiFi radio signals (Channel State Information / CSI) into human presence, activity, and physiological readings — with no cameras. "
+    },
+    "113": {
+      "path": "agentic-flow/CARD/agentic-flow-card",
+      "kind": "doc",
+      "title": "agentic-flow — Capability",
+      "chunk": 0,
+      "preview": "agentic-flow — A Claude-Code-integrated agent orchestration platform shipping 54+ ready-to-run specialized agents (coder, reviewer, PR-manager, architect) across three swarm topologies (mesh, hierarch"
+    },
+    "114": {
+      "path": "sparc/CARD/sparc-card",
+      "kind": "doc",
+      "title": "sparc — Capability",
+      "chunk": 0,
+      "preview": "sparc — A structured, AI-assisted software-development methodology organized into five phases — Specification, Pseudocode, Architecture, Refinement, Completion — with enforced conventions and review/q"
+    },
+    "115": {
+      "path": "qudag/CARD/qudag-card",
+      "kind": "doc",
+      "title": "qudag — Capability",
+      "chunk": 0,
+      "preview": "qudag — A quantum-resistant, DAG-based communication platform built on post-quantum cryptography (ML-KEM, ML-DSA) with anonymous multi-hop routing. Use it for end-to-end encrypted, anonymous secure me"
+    },
+    "116": {
+      "path": "safla/CARD/safla-card",
+      "kind": "doc",
+      "title": "safla — Capability",
+      "chunk": 0,
+      "preview": "safla — SAFLA (Self-Aware Feedback Loop Algorithm) — a self-improvement architecture that lets a system monitor, evaluate, and modify its own behavior through operational, meta-cognitive, and self-mod"
+    },
+    "117": {
+      "path": "ruv-fann/CARD/ruv-fann-card",
+      "kind": "doc",
+      "title": "ruv-fann — Capability",
+      "chunk": 0,
+      "preview": "ruv-fann — A fast, memory-safe neural network library written in Rust (a FANN-style framework, zero unsafe code) that compiles to WASM for the browser and edge. Use it to build and train neural networ"
+    },
+    "118": {
+      "path": "synthlang/CARD/synthlang-card",
+      "kind": "doc",
+      "title": "synthlang — Capability",
+      "chunk": 0,
+      "preview": "synthlang — An LLM middleware and CLI focused on prompt compression and token-cost reduction, fronted by a drop-in OpenAI-compatible proxy. Use it to compress prompts and cut token usage and cost (rep"
+    },
+    "119": {
+      "path": "rupixel/CARD/rupixel-card",
+      "kind": "doc",
+      "title": "rupixel — Capability",
+      "chunk": 0,
+      "preview": "rupixel — A zero-server, client-side visual retrieval system that searches images, live video frames, and document screenshots by semantic meaning using on-device CLIP embeddings — OCR-free, with no d"
+    },
+    "120": {
+      "path": "agenticow/CARD/agenticow-card",
+      "kind": "doc",
+      "title": "agenticow — Capability",
+      "chunk": 0,
+      "preview": "agenticow — \"Git for agent memory\" — a copy-on-write (COW) vector branching system that forks a vector store in constant time and size (~0.5 ms, ~162 bytes per branch) regardless of how large the base"
+    },
+    "121": {
+      "path": "cve-bench/CARD/cve-bench-card",
+      "kind": "doc",
+      "title": "cve-bench — Capability",
+      "chunk": 0,
+      "preview": "cve-bench — A SWE-bench-style benchmark that measures how well an AI agent can fix real, publicly disclosed security vulnerabilities (CVEs) by passing each project's own security regression test. Use "
+    },
+    "122": {
+      "path": "daa/CARD/daa-card",
+      "kind": "doc",
+      "title": "daa — Capability",
+      "chunk": 0,
+      "preview": "daa — DAA (Decentralized Autonomous Application / Agents) — a Rust framework for building autonomous economic agents that govern themselves with auditable rules, manage token economies, and integrate "
+    },
+    "123": {
+      "path": "dspy.ts/CARD/dspy.ts-card",
+      "kind": "doc",
+      "title": "dspy.ts — Capability",
+      "chunk": 0,
+      "preview": "dspy.ts — A TypeScript/JavaScript implementation of DSPy — a declarative framework for building LLM pipelines from composable modules and signatures that can be automatically optimized rather than han"
+    },
+    "124": {
+      "path": "fact/CARD/fact-card",
+      "kind": "doc",
+      "title": "fact — Capability",
+      "chunk": 0,
+      "preview": "fact — FACT (Fast-Access Cached Tools) — a system for reliable, low-latency AI tool integration built around aggressive caching and resilience. Use it to wire LLM tool calls with fast cached access, k"
+    },
+    "125": {
+      "path": "agent-harness-generator/CARD/agent-harness-generator-card",
+      "kind": "doc",
+      "title": "agent-harness-generator — Capability",
+      "chunk": 0,
+      "preview": "agent-harness-generator — Also called metaharness — a factory toolchain that scaffolds complete, custom AI agent harnesses with a single command, then scores and self-evolves them. Use it to generate "
     }
   }
 }

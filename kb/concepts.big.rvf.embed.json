@@ -7,5 +7,5 @@
   "queryPrefix": "Represent this sentence for searching relevant passages: ",
   "note": "Big (Mac/PC) variant. Passages embedded with NO prefix; queries use queryPrefix (asymmetric).",
   "builtFrom": "concepts.passages.jsonl",
-  "generated": "2026-06-28T08:03:14.106Z"
+  "generated": "2026-06-29T20:45:07.610Z"
 }

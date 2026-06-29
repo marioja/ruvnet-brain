@@ -1,0 +1,11 @@
+{
+  "model": "Xenova/bge-base-en-v1.5",
+  "dimensions": 768,
+  "metric": "cosine",
+  "pooling": "cls",
+  "normalize": true,
+  "queryPrefix": "Represent this sentence for searching relevant passages: ",
+  "note": "Big (Mac/PC) variant. Passages embedded with NO prefix; queries use queryPrefix (asymmetric).",
+  "builtFrom": "rvm.passages.jsonl",
+  "generated": "2026-06-29T05:44:18.517Z"
+}
